@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+main {
+  font-family: "Raleway", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  /* background-color: aquamarine; */
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 0 100px 0 80px;
+  box-sizing: border-box;
+  position: fixed;
+  transition: .5s;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid seagreen; */
+}
+
+button {
+  font-family: "Raleway", sans-serif;
+  background-color: transparent; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  outline: none;
+  transition: 500ms;
+}
+
+nav button:hover{
+  color: #fed136
+}
+
+.logo {
+  /* border: 1px solid seagreen; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+}
+
+.logo img {
+  position: absolute;
+  left: 50px;
+  top: 20px;
+  height: 50px;
+}
+
+.mastHead {
+  background: url('https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg');
+  width: 100%;
+  height: 90%;
+  background-position: center;
+  background-size: cover;
+}
+
+.welcomeContainer{
+  width: 100%;
+  height: calc(100% - 100px);
+  /* background-color: tomato; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.welcomeContainer span{
+  width: 70%;
+  height: 60%;
+  /* margin-top: -50px; */
+  /* border: 1px solid salmon; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+
+.welcomeContainer h2{
+  font-family: 'Noto Serif', serif;
+  color: white;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.welcomeContainer h1{
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-size: 5em;
+  text-align: center;
+  margin-top: -10px;
+}
+
+.welcomeContainer button{
+  background-color: #fed136;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-size: 1em;
+  border-radius: 5%;
+}
+
+.services{
+  width: 100%;
+  height: 60%;
+}
+
+.scrolling {
+  background-color: #212529;
+  height: 80px;
+  transition: .5s;
+}
+
+.menuButton {
+  display: none;
+  background-color: #fed136;
+  position: absolute;
+  right: 70px;
+  top: 20px;
+}
+
+@media screen and (max-width: 1000px){
+  header {
+    width: 100%;
+    height: 90px;
+    background-color: #212529;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px 0 80px;
+    box-sizing: border-box;
+    position: fixed;
+    transition: .5s;
+    overflow: hidden;
+  }
+
+  nav{
+    height: 100vh;
+    width: 300px;
+    transition: .5s;
+  }
+
+  nav ul{
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 300px;
+    position: absolute;
+    top: 70px;
+    left: 30px
+    /* border: 1px solid pink; */
+  }
+
+  nav button {
+    /* border: 1px solid pink; */
+    font-family: "Raleway", sans-serif;
+    background-color: transparent; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: 500ms;
+  }
+
+  .menu {
+    height: 300px;
+  }
+
+  .menuButton{
+    display: inline-block;
+  }
+  
+}
